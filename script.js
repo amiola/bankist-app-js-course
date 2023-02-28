@@ -43,7 +43,7 @@ const account2 = {
     '2020-02-05T16:33:06.386Z',
     '2020-04-10T14:43:26.374Z',
     '2020-06-25T18:49:59.371Z',
-    '2022-20-26T12:01:20.894Z',
+    '2020-06-25T19:49:59.371Z',
   ],
   currency: 'USD',
   locale: 'en-US',
@@ -201,7 +201,7 @@ const updateUI = function (acc) {
 
 const startLogOutTimer = function () {
   // Set time to 5 minutes
-  let time = 10;
+  let time = 5 * 60;
   //Call the timer every second
   const tick = function () {
     const min = `${Math.floor(time / 60)}`.padStart(2, 0);
@@ -764,3 +764,6 @@ setInterval(() => {
 }, 1000);
 */
 //  ----------------  IMPLEMENTING A COUTDOWN TIMER
+// Go to line 202
+
+console.log(accounts);
